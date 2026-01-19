@@ -15,7 +15,7 @@ from tqdm.auto import tqdm
 @click.option('--pg_host', default='localhost', help='PostgreSQL host')
 @click.option('--pg_port', default='5432', help='PostgreSQL port')
 @click.option('--pg_db', default='ny_taxi', help='PostgreSQL database name')
-@click.option('--taxi_color', default='yellow', help='Taxi color')
+@click.option('--taxi_color', default='green', help='Taxi color')
 @click.option('--year', default=2025, help='Year for data ingestion')
 @click.option('--month', default=11, help='Month for data ingestion')
 @click.option('--target_table', default=None, help='Target table in PostgreSQL')
@@ -45,7 +45,7 @@ def run(pg_user, pg_password, pg_host, pg_port, pg_db, year, month, taxi_color, 
         df_chunk = df_chunk.to_pandas()
 
         if first:
-            df_chunk.head(0).to_sql(
+            df_chunk.to_sql(
                 name=target_table,
                 con=engine,
                 if_exists="replace"
