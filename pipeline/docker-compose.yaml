@@ -19,6 +19,13 @@ services:
     ports:
       - "8085:80"
 
+  terraform:
+    image: hashicorp/terraform:1.6.6
+    volumes:
+      - ${PWD}/terraform:/workspace
+    working_dir: /workspace
+    tty: true
+
 volumes:
   ny_taxi_postgres_data:
   pgadmin_data:
