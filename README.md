@@ -8,4 +8,5 @@ This module demonstrates how to use Kestra as a workflow orchestration tool to d
 
 ### Homework
 [Homework 1](01-docker-terraform/homework-01.ipynb)
-[Homework 2](01-workflow-orchestration/homework-02.ipynb)
+
+[Homework 2](02-workflow-orchestration/homework-02.ipynb)
