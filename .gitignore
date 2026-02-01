@@ -1,5 +1,7 @@
 notebook.ipynb
 
+.env_encoded
+
 *.json
 
 .terraform/
