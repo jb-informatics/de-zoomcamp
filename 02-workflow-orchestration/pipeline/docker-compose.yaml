@@ -70,7 +70,7 @@ services:
         kestra:
           server:
             basicAuth:
-              username: "jb@zoomcamp.io" # it must be a valid email address
+              username: "admin@amin.com" # it must be a valid email address
               password: Admin1234!
           repository:
             type: postgres
