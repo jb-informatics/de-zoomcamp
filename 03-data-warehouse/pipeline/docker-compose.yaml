@@ -1,0 +1,7 @@
+services:
+  terraform:
+    image: hashicorp/terraform:1.6.6
+    volumes:
+      - ${PWD}/terraform:/workspace
+    working_dir: /workspace
+    tty: true
