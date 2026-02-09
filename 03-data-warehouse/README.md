@@ -1,3 +1,5 @@
+# Homework
+
 #### What is count of records for the 2024 Yellow Taxi Data?
 ![Screenshot](images/question1.png)
 
@@ -6,6 +8,7 @@
 
 #### Why are the estimated number of Bytes different?
 BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
+
 ![Screenshot](images/question3_1.png)
 ![Screenshot](images/question3_2.png)
 
